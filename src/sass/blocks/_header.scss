@@ -8,6 +8,12 @@
         img {
             width: 100%;
         }
+        &_animated {
+            animation-name: box_shadow_logo;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
     }
     &__menu {
         list-style-type: none;

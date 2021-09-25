@@ -1,0 +1,20 @@
+@keyframes box_shadow_logo {
+    from {
+        height: 99px;
+        width: 95px;
+        border-radius: 100%;
+        box-shadow: none;
+    }
+    50% {
+        height: 99px;
+        width: 95px;
+        border-radius: 100%;
+        box-shadow: 0 0 20px $main_color_1;
+    }
+    to {
+        height: 99px;
+        width: 95px;
+        border-radius: 100%;
+        box-shadow: none;
+    }
+}

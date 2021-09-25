@@ -12,5 +12,6 @@
     transition: 0.5s all;
     &:hover {
         background-color: $main_color_2;
+        box-shadow: 0 0 10px $main_color_1;
     }
 }
