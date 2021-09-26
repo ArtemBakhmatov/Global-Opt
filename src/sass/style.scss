@@ -16,11 +16,19 @@
     margin: 0 auto;
 }
 
+.divider {
+    margin: 20px auto 17px auto;
+    width: 148px;
+    height: 1px;
+    background-color: $main_color_1;
+}
+
 @import "blocks/titles";
 @import "blocks/buttons";
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/advantages";
+@import "blocks/work";
 
 @import "blocks/media";
 

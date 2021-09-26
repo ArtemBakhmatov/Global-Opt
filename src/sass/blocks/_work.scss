@@ -1,0 +1,38 @@
+.work {
+    min-height: 620px;
+    padding: 50px 0 55px 0;
+    &__descr {
+        line-height: 24px;
+        width: 880px;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 360px;
+        &_img {
+            img {
+                width: 100%;
+            }
+        }
+        &_title {
+            margin-top: 28px;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: $main_color_1;
+        }
+        &_text {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: justify;
+            color: #3a3a3a;
+        }
+    }
+}

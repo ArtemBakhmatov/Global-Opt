@@ -494,6 +494,13 @@ progress {
   margin: 0 auto;
 }
 
+.divider {
+  margin: 20px auto 17px auto;
+  width: 148px;
+  height: 1px;
+  background-color: #ec644b;
+}
+
 .title {
   margin-top: 10px;
   margin-bottom: 0;
@@ -519,7 +526,7 @@ progress {
   font-weight: 300;
   line-height: 21px;
   text-align: center;
-  color: #2e2e2e;
+  color: #3a3a3a;
 }
 
 .btn {
@@ -813,6 +820,53 @@ progress {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
+  color: #3a3a3a;
+}
+
+.work {
+  min-height: 620px;
+  padding: 50px 0 55px 0;
+}
+
+.work__descr {
+  line-height: 24px;
+  width: 880px;
+  margin: 0 auto;
+}
+
+.work__wrapper {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work__block {
+  width: 360px;
+}
+
+.work__block_img img {
+  width: 100%;
+}
+
+.work__block_title {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ec644b;
+}
+
+.work__block_text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: justify;
   color: #3a3a3a;
 }
 
