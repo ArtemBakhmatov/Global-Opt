@@ -1,4 +1,4 @@
-window.addEventListener('click', function() {
+window.addEventListener('DOMContentLoaded', function() {
     let hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.header__menu'),
         menuItem = document.querySelectorAll('.header__menu-item');
