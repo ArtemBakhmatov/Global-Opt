@@ -14,4 +14,45 @@ window.addEventListener('DOMContentLoaded', function() {
             menu.classList.toggle('header__menu_active');
         });
     });
+
+    let btnGo = document.querySelectorAll('.delivery__item_btn'),
+        btnBack = document.querySelectorAll('.delivery__item_btn-list'),
+        itemContent = document.querySelector('.delivery__item_content'),
+        list = document.querySelector('.delivery__item_list');
+
+    btnGo.forEach(function(item){
+        item.addEventListener('click', function() {
+            itemContent.classList.toggle('delivery__item_content-active');
+            list.classList.toggle('delivery__item_list-active');
+        });
+    });
+
+    btnBack.forEach(function(item){
+        item.addEventListener('click', function() {
+            itemContent.classList.toggle('delivery__item_content-active');
+            list.classList.toggle('delivery__item_list-active');
+        });
+    });
+
+    // btnGo.forEach(function(item){
+    //     item.addEventListener('click', function() {
+    //         itemContent.forEach(function(i){
+    //             i.classList.toggle('delivery__item_content-active');
+    //         });
+    //         list.forEach(function(i){
+    //             i.classList.toggle('delivery__item_list-active');
+    //         });
+    //     });
+    // });
+
+    // btnBack.forEach(function(item){
+    //     item.addEventListener('click', function() {
+    //         itemContent.forEach(function(i){
+    //             i.classList.toggle('delivery__item_content-active');
+    //         });
+    //         list.forEach(function(i){
+    //             i.classList.toggle('delivery__item_list-active');
+    //         });
+    //     });
+    // });
 });
