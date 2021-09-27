@@ -33,6 +33,11 @@
             width: 300px;
         }
     }
+    .agent {
+        &__descr {
+            width: 935px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -111,6 +116,13 @@
             &_central {
                 margin: 35px auto 0 auto;
             }
+        }
+    }
+    .agent {
+        min-height: 325px;
+        padding: 40px 0 40px 0;
+        &__descr {
+            width: 535px;
         }
     }
 }
@@ -310,6 +322,16 @@
         }
         &__block {
             width: 280px;
+        }
+    }
+    .agent {
+        min-height: 325px;
+        padding: 25px 0 20px 0;
+        &__descr {
+            margin: 15px auto 0 auto;
+            width: 280px;
+            font-size: 17px;
+            line-height: 25px;
         }
     }
 }

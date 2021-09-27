@@ -1,0 +1,27 @@
+.agent {
+    min-height: 340px;
+    padding: 60px 0 55px 0;
+    background: url('../img/second_bg.jpg') center center/cover no-repeat;
+    &__img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border-radius: 100%;
+        border: 1px solid white;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        text-transform: none;
+        color: white;
+    }
+    &__descr {
+        margin: 22px auto 0 auto;
+        width: 985px;
+        font-size: 19px;
+        line-height: 27px;
+        color: silver;
+    }
+}
