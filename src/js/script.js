@@ -15,24 +15,41 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    let btnGo = document.querySelectorAll('.delivery__item_btn'),
-        btnBack = document.querySelectorAll('.delivery__item_btn-list'),
-        itemContent = document.querySelector('.delivery__item_content'),
-        list = document.querySelector('.delivery__item_list');
-
-    btnGo.forEach(function(item){
-        item.addEventListener('click', function() {
-            itemContent.classList.toggle('delivery__item_content-active');
-            list.classList.toggle('delivery__item_list-active');
-        });
+// Jquery
+    $(document).ready(function(){
+        function toggleSlide(item) {
+            $(item).each(function(i) {
+                $(this).on('click', function(e) {
+                    e.preventDefault();
+                    $('.delivery__item_content').eq(i).toggleClass('delivery__item_content-active');
+                    $('.delivery__item_list').eq(i).toggleClass('delivery__item_list-active');
+                })
+            });
+        };
+    
+        toggleSlide('.delivery__item_btn');
+        toggleSlide('.delivery__item_btn-list');
+    
     });
 
-    btnBack.forEach(function(item){
-        item.addEventListener('click', function() {
-            itemContent.classList.toggle('delivery__item_content-active');
-            list.classList.toggle('delivery__item_list-active');
-        });
-    });
+    // let btnGo = document.querySelectorAll('.delivery__item_btn'),
+    //     btnBack = document.querySelectorAll('.delivery__item_btn-list'),
+    //     itemContent = document.querySelector('.delivery__item_content'),
+    //     list = document.querySelector('.delivery__item_list');
+
+    // btnGo.forEach(function(item){
+    //     item.addEventListener('click', function() {
+    //         itemContent.classList.toggle('delivery__item_content-active');
+    //         list.classList.toggle('delivery__item_list-active');
+    //     });
+    // });
+
+    // btnBack.forEach(function(item){
+    //     item.addEventListener('click', function() {
+    //         itemContent.classList.toggle('delivery__item_content-active');
+    //         list.classList.toggle('delivery__item_list-active');
+    //     });
+    // });
 
     // btnGo.forEach(function(item){
     //     item.addEventListener('click', function() {
