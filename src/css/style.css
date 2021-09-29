@@ -1162,6 +1162,43 @@ progress {
   border: 2px solid #ec644b;
 }
 
+.manager {
+  min-height: 340px;
+  padding: 60px 0 55px 0;
+  background: url("../img/third_bg.jpg") center center/cover no-repeat;
+}
+
+.manager__img {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 102px;
+  height: 102px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.manager__subtitle {
+  margin-top: 20px;
+  text-transform: none;
+  color: white;
+}
+
+.manager__descr {
+  margin: 22px auto 0 auto;
+  width: 924px;
+  font-size: 19px;
+  line-height: 27px;
+  color: silver;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1327,6 +1364,13 @@ progress {
   }
   .consultation__btn_wrapper {
     top: 289px;
+  }
+  .manager {
+    min-height: 325px;
+    padding: 40px 0 40px 0;
+  }
+  .manager__descr {
+    width: 535px;
   }
 }
 
@@ -1590,6 +1634,16 @@ progress {
   }
   .consultation__btn_wrapper {
     top: 360px;
+  }
+  .manager {
+    min-height: 325px;
+    padding: 25px 0 20px 0;
+  }
+  .manager__descr {
+    margin: 15px auto 0 auto;
+    width: 280px;
+    font-size: 17px;
+    line-height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
