@@ -29,6 +29,11 @@ window.addEventListener('DOMContentLoaded', function() {
     
         toggleSlide('.delivery__item_btn');
         toggleSlide('.delivery__item_btn-list');
+
+    // Слайдер
+    $('.carousel__inner').slick({
+        speed: 1500,
+      });    
     
     });
 
