@@ -1371,7 +1371,9 @@ progress {
 }
 
 .carousel__inner {
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
+  width: 601px;
+  position: relative;
 }
 
 .carousel__wrapper {
@@ -1405,6 +1407,50 @@ progress {
   line-height: 22px;
   text-align: justify;
   color: #3a3a3a;
+}
+
+.carousel .slick-prev {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 430px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.carousel .slick-prev img {
+  width: 31px;
+  height: 50px;
+}
+
+.carousel .slick-prev:hover {
+  -webkit-box-shadow: 0 0 10px #ec644b;
+          box-shadow: 0 0 10px #ec644b;
+}
+
+.carousel .slick-next {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 140px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.carousel .slick-next img {
+  width: 31px;
+  height: 50px;
+}
+
+.carousel .slick-next:hover {
+  -webkit-box-shadow: 0 0 10px #ec644b;
+          box-shadow: 0 0 10px #ec644b;
 }
 
 @media (max-width: 1200px) {
@@ -1604,6 +1650,15 @@ progress {
   .scheme__block:nth-child(4) {
     margin: 30px 0 0 0;
   }
+  .carousel {
+    padding: 40px 0 40px 0;
+  }
+  .carousel__descr {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 auto;
+    width: 655px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1760,6 +1815,24 @@ progress {
   .scheme {
     padding: 30px 0 30px 0;
   }
+  .carousel {
+    padding: 30px 0 30px 0;
+  }
+  .carousel__descr {
+    width: 510px;
+  }
+  .carousel__inner {
+    width: 500px;
+  }
+  .carousel__wrapper {
+    width: 490px;
+  }
+  .carousel .slick-prev {
+    left: 370px;
+  }
+  .carousel .slick-next {
+    left: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1780,6 +1853,8 @@ progress {
   .promo__subtitle {
     font-size: 31px;
     line-height: 37px;
+    margin: 15px auto 0 auto;
+    width: 280px;
   }
   .promo__descr {
     font-size: 15px;
@@ -1882,6 +1957,26 @@ progress {
   }
   .scheme {
     padding: 20px 0 20px 0;
+  }
+  .carousel {
+    padding: 20px 0 20px 0;
+  }
+  .carousel__descr {
+    width: 231px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .carousel__inner {
+    width: 275px;
+  }
+  .carousel__wrapper {
+    width: 250px;
+  }
+  .carousel .slick-prev {
+    left: 232px;
+  }
+  .carousel .slick-next {
+    left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -32,7 +32,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Слайдер
     $('.carousel__inner').slick({
-        speed: 1500,
+        speed: 1200,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/right.svg" alt="right"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/left.svg" alt="left"></button>',
       });    
     
     });
