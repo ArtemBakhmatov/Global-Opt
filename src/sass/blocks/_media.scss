@@ -245,6 +245,14 @@
             color: white;
         }
     }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__text {
+            margin: 20px 0 20px 0;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -433,6 +441,16 @@
             }
         }
     }
+    .footer {
+        &__wrapper {
+            &_end {
+                flex-direction: column;
+                a {
+                    margin: 20px 0 20px 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -602,6 +620,19 @@
         &__info {
             width: 285px;
             padding: 20px 25px;
+        }
+    }
+    .footer {
+        &__text {
+            line-height: 20px;
+            text-align: center;
+            width: 283px;
+        }
+        &__contacts {
+            flex-direction: column;
+        }
+        &__btn {
+            margin-top: 10px;
         }
     }
 }
